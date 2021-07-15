@@ -1,0 +1,44 @@
+﻿<Application x:Class="SystemeDachat.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SystemeDachat"
+             StartupUri="MainWindow.xaml">
+
+    <Application.Resources>
+        <!--STYLES-->
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="100"></Setter>
+        </Style>
+
+        <!--Buttons d'action-->
+        <Style x:Key="ActionButton" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            
+            <Setter Property="Padding" Value="30"></Setter>
+
+            <Setter Property="FontSize" Value="50"></Setter>
+            <Setter Property="Margin" Value="100, 0, 100, 0"></Setter>
+
+            <Setter Property="Cursor" Value="Hand"></Setter>
+        </Style>
+
+        <!--Button de confirmation-->
+        <Style BasedOn="{StaticResource ActionButton}" x:Key="ConfirmButton" TargetType="Button">
+            <Setter Property="Background" Value="Chartreuse"></Setter>
+
+
+            
+        </Style>
+        
+        <!--Button d'annulation-->
+        <Style BasedOn="{StaticResource ActionButton}" x:Key="CancelButton" TargetType="Button">
+            <Setter Property="Background" Value="Crimson"></Setter>
+
+        </Style>
+
+        <!--DATA TEMPLATE-->
+        <DataTemplate x:Key="productTemplate">
+
+        </DataTemplate>
+    </Application.Resources>
+</Application>

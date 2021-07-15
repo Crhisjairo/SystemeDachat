@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="SystemeDachat.Views.UserControl.ProductControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SystemeDachat.Views.UserControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="950">
+    <UserControl.Resources>
+
+        <!--Product name style-->
+        <Style TargetType="TextBlock" x:Key="NameStyle">
+            <Setter Property="FontSize" Value="45"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"></Setter>
+        </Style>
+        <!--Product description style-->
+        <Style TargetType="TextBlock" x:Key="DescStyle">
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"></Setter>
+        </Style>
+        <!--Product brand style-->
+        <Style TargetType="TextBlock" x:Key="BrandStyle">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"></Setter>
+        </Style>
+        <!--Product price style-->
+        <Style TargetType="TextBlock" x:Key="PriceStyle">
+            <Setter Property="FontSize" Value="45"></Setter>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"></Setter>
+        </Style>
+
+        <!--Remove product button style-->
+        <Style TargetType="Button" x:Key="RemoveButtonStyle">
+            <Setter Property="FontSize" Value="60"></Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition Width="550"></ColumnDefinition>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="60"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Name="ProductImage" Source="/Views/icons/DefaultImageIcon.png" />
+
+        <Grid Grid.Column="1">
+            <StackPanel>
+                <TextBlock Name="ProductName" Text="PRODUCT_NAME" Style="{StaticResource NameStyle}"></TextBlock>
+                <TextBlock Name="ProductDescription" Text="PRODUCT_DESC" Style="{StaticResource DescStyle}"></TextBlock>
+                <TextBlock Name="ProductBrand" Text="PRODUCT_DESC" Style="{StaticResource BrandStyle}"></TextBlock>
+            </StackPanel>
+        </Grid>
+
+        <TextBlock Grid.Column="2" Name="ProductPrice" Text="99.99$" Style="{StaticResource PriceStyle}"></TextBlock>
+
+        <Button Grid.Column="3" Content="X" Style="{StaticResource RemoveButtonStyle}" Click="RemoveProduct_Click"></Button>
+    </Grid>
+</UserControl>

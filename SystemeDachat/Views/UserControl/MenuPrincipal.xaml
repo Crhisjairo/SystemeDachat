@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="SystemeDachat.Views.UserControl.MenuPrincipal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SystemeDachat.Views.UserControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="19*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Label>Logo Here</Label>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="261" Width="1920" Margin="3,0,0,0">
+                <Button Style="{StaticResource ConfirmButton}" Height="250" Width="800" Click="Button_Commencer">Commencer</Button>
+                <Button Style="{StaticResource ActionButton}" Margin="520,0,0,0" VerticalAlignment="Bottom" Click="Button_Aide">Aide</Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Button Style="{StaticResource CancelButton}" Click="ArreterApplication" HorizontalAlignment="Right" Margin="100 40" Width="220">Exit</Button>
+
+        </Grid>
+    </Grid>
+</UserControl>

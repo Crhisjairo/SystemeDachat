@@ -1,0 +1,13 @@
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\obj\Debug\netcoreapp3.1\SystemeDachatModel.csprojAssemblyReference.cache
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\obj\Debug\netcoreapp3.1\SystemeDachatModel.AssemblyInfoInputs.cache
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\obj\Debug\netcoreapp3.1\SystemeDachatModel.AssemblyInfo.cs
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\obj\Debug\netcoreapp3.1\SystemeDachatModel.csproj.CoreCompileInputs.cache
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\bin\Debug\netcoreapp3.1\SystemeDachatModel.exe
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\bin\Debug\netcoreapp3.1\SystemeDachatModel.deps.json
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\bin\Debug\netcoreapp3.1\SystemeDachatModel.runtimeconfig.json
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\bin\Debug\netcoreapp3.1\SystemeDachatModel.runtimeconfig.dev.json
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\bin\Debug\netcoreapp3.1\SystemeDachatModel.dll
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\bin\Debug\netcoreapp3.1\SystemeDachatModel.pdb
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\obj\Debug\netcoreapp3.1\SystemeDachatModel.dll
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\obj\Debug\netcoreapp3.1\SystemeDachatModel.pdb
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachatModel\obj\Debug\netcoreapp3.1\SystemeDachatModel.genruntimeconfig.cache

@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="SystemeDachat.Views.UserControl.EcranAchat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SystemeDachat.Views.UserControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Row="0">
+            <WrapPanel>
+                <Label>Ecran Achat!!!</Label>
+             
+                <StackPanel Orientation="Horizontal">
+                    <ComboBox Name="availableProducts" Width="255" Height="50" FontSize="30" SelectedIndex="0"></ComboBox>
+                    <Button Content="Ajouter Article" Style="{StaticResource ActionButton}" Click="AjouterArticle_Click"></Button>
+                </StackPanel>
+
+                </WrapPanel>
+        </Grid>
+
+        <Grid Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Produits scannés-->
+            <Grid Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.15*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" FontSize="50">Produits à achèter</Label>
+
+                <ListBox Grid.Row="1" Name="productList" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Height" Value="150" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <!--Un article-->
+                    <!--Un article-->
+                    <!--Un article-->
+                </ListBox>
+
+            </Grid>
+
+            <!--Facture-->
+            <Grid Column="1">
+                <StackPanel VerticalAlignment="Bottom">
+                    <TextBlock Name="subTotalTxt" Text="Subtotal: 0.0 $CA" FontSize="55"></TextBlock>
+                    <TextBlock Name="totalTxt" Text="Total: 0.0 $CA" FontSize="70"></TextBlock>
+                </StackPanel>
+
+                <local:ProductNotFound x:Name="productNotFoundView" Visibility="Hidden">
+                </local:ProductNotFound>
+
+            </Grid>
+        </Grid>
+
+        <Grid Row="2">
+            <!--Buttons d'action-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="👈 Annuler" Style="{StaticResource CancelButton}" Click="Annuler_Click"></Button>
+                <Button Style="{StaticResource ActionButton}" Content="Aide" Click="Button_Aide"></Button>
+                <Button Style="{StaticResource ConfirmButton}" Click="ProcederAuPaiement_Click" Content="Proceder au paiment"/>
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+
+</UserControl>
