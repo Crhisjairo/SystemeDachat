@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SystemeDachat.DB.Models;
-using SystemeDachat.Logic;
+using SystemeDachat.Models;
 
 namespace SystemeDachat.Views.UserControl
 {

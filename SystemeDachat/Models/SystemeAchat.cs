@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using SystemeDachat.DB;
 using SystemeDachat.DB.Models;
 
-namespace SystemeDachat.Logic
+namespace SystemeDachat.Models
 {
     internal static class SystemeAchat
     {

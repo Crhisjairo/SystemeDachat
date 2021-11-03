@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -14,8 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SystemeDachat.DB.Models;
-using SystemeDachat.Logic;
-using SystemeDachat.Views.Windows;
+using SystemeDachat.Models;
+using SystemeDachat.Views.WindowsDialog;
 using MessageBox = System.Windows.MessageBox;
 
 namespace SystemeDachat.Views.UserControl
@@ -25,15 +26,10 @@ namespace SystemeDachat.Views.UserControl
     /// </summary>
     public partial class EcranAchat : System.Windows.Controls.UserControl
     {
-        /// <summary>
-        /// ContentControl de la fenêtre principal.
-        /// </summary>
-        private ContentControl _contenu; //À MODIFIER!!!!!!!
 
-        public EcranAchat(ContentControl contenu)
+        public EcranAchat()
         {
             InitializeComponent();
-            _contenu = contenu; //À MODIFIER!!!!!!!
 
             InitAvailableProductsList();
         }
@@ -45,10 +41,7 @@ namespace SystemeDachat.Views.UserControl
 
         private void Annuler_Click(object sender, RoutedEventArgs e)
         {
-            //À MODIFIER!!!!!!!
-            _contenu.Content = new MenuPrincipal(_contenu);
-
-            SystemeAchat.RestartSystem();
+            MainWindow.RestartApp();
         }
 
         private void AjouterArticle_Click(object sender, RoutedEventArgs e)
@@ -99,16 +92,32 @@ namespace SystemeDachat.Views.UserControl
             }
 
             String paymentMethod = PaymentMethodWindows.Show().ToString(); //Recupère la valeur du type de payment
-            
-            //Changement du contenu de la fenêtre au AchatRéussi
-            _contenu.Content = new AchatReussi(paymentMethod);
 
-            //Après un certain temps on remet le MenuPrincipal
-            /*
-             * SystemeAchat.RestartSystem();
-             * _contenu.Content = new MenuPrincipal(_contenu);
-             *
-             */
+            //Changement du contenu de la fenêtre au AchatRéussi
+            MainWindow.MainContentControl.Content = new AchatReussi(paymentMethod);
+
+
+
+            //******Après un certain temps on remet le MenuPrincipal*******//
+            WaitToRestartApp(5000);
+        }
+
+        private void WaitToRestartApp(int ms)
+        {
+            System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
+
+            timer.Tick += new EventHandler(ResetApp);
+            timer.Interval = new TimeSpan(0, 0, 5);
+            timer.Start();
+        }
+
+        private static void ResetApp(object sender, EventArgs e)
+        {
+            //Appele à la fenêtre principal pour redéramerrer l'app
+            MainWindow.RestartApp();
+
+            System.Windows.Threading.DispatcherTimer timer = (System.Windows.Threading.DispatcherTimer)sender;
+            timer.Stop();
 
         }
 
@@ -118,5 +127,9 @@ namespace SystemeDachat.Views.UserControl
             helpWin.ShowDialog();
             
         }
+    }
+
+    internal class dispatcherTimer
+    {
     }
 }

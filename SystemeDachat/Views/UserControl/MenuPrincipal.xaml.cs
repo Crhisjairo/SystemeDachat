@@ -12,8 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SystemeDachat.Logic;
-using SystemeDachat.Views.Windows;
+using SystemeDachat.Models;
+using SystemeDachat.Views.WindowsDialog;
 
 namespace SystemeDachat.Views.UserControl
 {
@@ -22,15 +22,10 @@ namespace SystemeDachat.Views.UserControl
     /// </summary>
     public partial class MenuPrincipal : System.Windows.Controls.UserControl
     {
-        /// <summary>
-        /// ContentControl de la fenêtre principal.
-        /// </summary>
-        private ContentControl _contenu; //À MODIFIER!!!!!!!
 
-        public MenuPrincipal(ContentControl contenu)
+        public MenuPrincipal()
         {
             InitializeComponent();
-            _contenu = contenu; //À MODIFIER!!!!!!!
         }
 
 
@@ -44,7 +39,7 @@ namespace SystemeDachat.Views.UserControl
 
         private void Button_Commencer(object sender, RoutedEventArgs e)
         {
-            _contenu.Content = new EcranAchat(_contenu); //À MODIFIER!!!!!!!
+            MainWindow.MainContentControl.Content = new EcranAchat(); //À MODIFIER!!!!!!!
         }
 
         private void Button_Aide(object sender, RoutedEventArgs e)

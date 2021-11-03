@@ -63,7 +63,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DB\Models\Product.cs" />
-    <Compile Include="Logic\NullProductExceptioncs.cs" />
+    <Compile Include="Models\NullProductExceptioncs.cs" />
     <Compile Include="Views\UserControl\AchatReussi.xaml.cs">
       <DependentUpon>AchatReussi.xaml</DependentUpon>
     </Compile>
@@ -79,10 +79,10 @@
     <Compile Include="Views\UserControl\ProductNotFound.xaml.cs">
       <DependentUpon>ProductNotFound.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Windows\HelpWindows.xaml.cs">
+    <Compile Include="Views\WindowsDialog\HelpWindows.xaml.cs">
       <DependentUpon>HelpWindows.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Windows\PaymentMethodWindows.xaml.cs">
+    <Compile Include="Views\WindowsDialog\PaymentMethodWindows.xaml.cs">
       <DependentUpon>PaymentMethodWindows.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\MainWindow.xaml">
@@ -90,7 +90,7 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="DB\Database.cs" />
-    <Compile Include="Logic\SystemeAchat.cs" />
+    <Compile Include="Models\SystemeAchat.cs" />
     <Compile Include="Views\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -119,11 +119,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Windows\HelpWindows.xaml">
+    <Page Include="Views\WindowsDialog\HelpWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Windows\PaymentMethodWindows.xaml">
+    <Page Include="Views\WindowsDialog\PaymentMethodWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace SystemeDachat.Views.Windows
+namespace SystemeDachat.Views.WindowsDialog
 {
     /// <summary>
     /// Logique d'interaction pour PaymentMethodWindows.xaml

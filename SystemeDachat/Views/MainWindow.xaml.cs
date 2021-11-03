@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SystemeDachat.DB;
-using SystemeDachat.Logic;
+using SystemeDachat.Models;
 using SystemeDachat.Views.UserControl;
 
 namespace SystemeDachat
@@ -23,11 +23,29 @@ namespace SystemeDachat
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        /// <summary>
+        /// ContentControl qui est modifié par les UserControls.
+        /// </summary>
+        public static ContentControl MainContentControl;
+
         public MainWindow()
         {
             InitializeComponent();
 
-            Contenu.Content = new MenuPrincipal(Contenu); //Affichage du UserControl Menu Principal lors de la création du Main Window.
+            MainContentControl = RootContentControl;
+
+            //Affichage du UserControl MenuPrincipal lors de la création du MainWindow.
+            RootContentControl.Content = new MenuPrincipal(); 
+        }
+
+        public static void RestartApp()
+        {
+            //Réinitialisation de la view
+            MainContentControl.Content = new MenuPrincipal();
+
+            //Réinitialisation du model (le système)
+            SystemeAchat.RestartSystem();
         }
     }
 }

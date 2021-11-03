@@ -15,7 +15,7 @@
     WindowStyle="None"-->
 
     <Grid>
-       <ContentControl x:Name="Contenu"></ContentControl>
+       <ContentControl x:Name="RootContentControl"></ContentControl>
     </Grid>
 
 </Window>

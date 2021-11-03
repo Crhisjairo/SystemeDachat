@@ -27,11 +27,11 @@ C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug
 C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\UserControl\ProductControl.g.cs
 C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\UserControl\ProductControl.baml
-C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\Windows\PaymentMethodWindows.g.cs
-C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\Windows\PaymentMethodWindows.baml
 C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\UserControl\ProductNotFound.g.cs
 C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\UserControl\ProductNotFound.baml
-C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\Windows\HelpWindows.g.cs
-C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\Windows\HelpWindows.baml
 C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\UserControl\AchatReussi.g.cs
 C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\UserControl\AchatReussi.baml
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\WindowsDialog\HelpWindows.g.cs
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\WindowsDialog\PaymentMethodWindows.g.cs
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\WindowsDialog\HelpWindows.baml
+C:\Users\Crhistian C\Documents\Projects\C#\SystemeDachat\SystemeDachat\obj\Debug\Views\WindowsDialog\PaymentMethodWindows.baml
